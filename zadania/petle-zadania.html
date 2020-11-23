@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/petle_zadania.js"></script>
+</head>
+<body>
+    <p>Zerknij do konsoli</p>
+</body>
+</html>
+
+<script>
+    sumuj([5,5,10,10,2,2,2,2,2]);
+    console.log("##############################################");
+    gwiazdki();
+    console.log("##############################################");
+    sumaNaturnalnych();
+    console.log("##############################################");
+    const users = [
+        {name: "Dominika", age: 18},
+        {name: "Jan", age: 16},
+        {name: "Damian", age: 33},
+        {name: "Kinga", age: 28}
+    ];
+    console.log("Użytkownicy przed przefiltrowaniem: ");
+    console.log(users);
+    const filteredUsers = filterUsers(users);
+    console.log("Użytkownicy po filtrowaniu: ");
+    console.log(filteredUsers);
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="header">Nagłówek</h1>
+    </div>
+    <input type="text" value="initial value"/>
+    <input type="text" value="initial value"/>
+    <input type="text" value="initial value"/>
+    <p class="myclass">Element powienien zostać usunięty</p>
+</body>
+</html>
+
+<script>
+    let element = document.getElementById("main");
+    let p1 = document.createElement("P"); //stworz element
+    p1.style.background = "pink";  // ustaw tło na różowe
+    p1.setAttribute("id", "main-paragraf");    //ustawienie atrybutu elementu
+    p1.innerHTML = "<h1>nowy tekst</h1>"; // najprostrzy sposób na zmiane tekstu w elemencie
+    const text = document.getElementById("header").textContent; //pobranie tekstu
+    console.log(text);
+
+    element.appendChild(p1);
+    document.getElementsByTagName("input")[0].value = "20";
+    document.querySelectorAll("p.myclass")[0].remove();
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/register-js.js" defer></script>
+</head>
+<body>
+<form action="admin/index.html">
+    <div class="container">
+        <h1>Register</h1>
+        <p class="bold">Please fill in this form to create an account.</p>
+        <hr>
+        <div class="field-group">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" id="email">
+            <span id="email_validation" class="validation-message"></span>
+        </div>
+
+        <div class="field-group">
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" id="psw">
+            <span id="psw_validation" class="validation-message"></span>
+        </div>
+
+        <div class="field-group">
+            <label for="psw-repeat">Repeat Password</label>
+            <input type="password" placeholder="Repeat Password" id="psw-repeat">
+            <span id="psw-repeat_validation" class="validation-message"></span>
+        </div>
+        <hr>
+        <label>Sex:</label><br/>
+        <input type="radio" name="sex" value="male" checked > Male<br/>
+        <input type="radio" name="sex" value="female"> Female
+        <hr>
+        <label>Year of birth:</label>
+        <select id="age">
+            <option>1991</option>
+            <option>1992</option>
+        </select>
+        <hr>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy.</a></p>
+        <label><input type="checkbox" id="terms" onclick="toogleButtonActivity()">I accept</label>
+        <br/><br/>
+        <button id="submit-btn" type="submit" class="registerbtn" onclick="register(event)" disabled>Register</button>
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+</form>
+</body>
+</html>

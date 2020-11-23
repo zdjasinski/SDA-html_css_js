@@ -1,0 +1,71 @@
+body {
+    font-family: Calibri;
+    line-height: 1.5;
+}
+/**/
+input:focus {
+    background: lightgrey;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.container {
+    padding: 0 20px;
+    margin: auto;
+    width: 30%;
+    background: aliceblue;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+h1 {
+    color: cadetblue;
+}
+
+.field-group {
+    margin: 10px 0;
+}
+
+.field-group label {
+    margin: 0
+}
+
+.field-group input, select {
+    width: 100%;
+    height: 1.5em;
+}
+
+label {
+    font-weight: bolder;
+}
+
+a:hover {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+button {
+    background: cadetblue;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+button:hover:disabled {
+    cursor: not-allowed;
+}
+
+.validation-message {
+    color: red;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/calc.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Kalkulator</h1>
+
+    <div class="field-group">
+        <label for="num1">Pierwsza liczba</label>
+        <input type="number" placeholder="Pierwsza liczba" id="num1" required>
+    </div>
+
+    <div class="field-group">
+        <label for="num2">Druga liczba</label>
+        <input type="number" placeholder="Druga liczba" id="num2" required>
+    </div>
+
+    <div class="field-group">
+        <label>Operacja</label>
+        <select id="operation">
+            <option value="+" >dodawanie</option>
+            <option value="-" selected>odejmowanie</option>
+        </select>
+    </div>
+    <br/>
+    <br/>
+    <!--Podpinamy zdarzenie w atrybucie elementu lub z poziomu skryptu-->
+    <!--<button type="submit" onclick="sumuj()">Licz</button>-->
+    <button id="sumBtn" type="submit">Licz</button>
+    <hr>
+    <label>Wynik</label>
+    <span id="result"></span>
+</div>
+</body>
+</html>
+
+
+
