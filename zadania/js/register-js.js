@@ -11,7 +11,6 @@ function register(event) {
             password: document.getElementById(pswId).value,
             sex: document.querySelectorAll("input[type='radio'][name='sex']:checked")[0].value,
             age: document.getElementById("age").value
-
         };
         console.log(request);
         //sendRequest(request);

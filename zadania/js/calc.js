@@ -11,8 +11,4 @@ function sumuj() {
     }
 }
 
-window.onload = function () {
-    document.getElementById("sumBtn").addEventListener('click', function () {
-        sumuj();
-    })
-}
+document.getElementById("sumBtn").addEventListener('click', sumuj)

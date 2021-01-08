@@ -1,15 +1,5 @@
-import {ProductComponent} from "./product.component.js";
+import { ProductComponent } from "./product.component.js";
 
-class App {
-    constructor() {
-        this.productComponent = new ProductComponent();
-    }
+const productComponent = new ProductComponent();
 
-    init() {
-        this.productComponent.init();
-    }
-}
-
-const app = new App();
-
-app.init();
+productComponent.init();

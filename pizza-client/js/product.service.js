@@ -1,24 +1,19 @@
-import * as constants from './constants.js'
-
 export class ProductService {
+    url = "http://localhost:8080/api/v1/product";
+
     constructor() {
     }
 
     async getProducts() {
-        const url = constants.API_URL + constants.METHODS.product;
-
         try {
-            let res = await fetch(url);
+            let res = await fetch(this.url);
             return await res.json();
         } catch (error) {
             console.log(error);
         }
     }
 
-
     async addProduct(name, price, description) {
-        const url = constants.API_URL + constants.METHODS.product;
-
         const request = {
             name,
             price,
@@ -26,7 +21,7 @@ export class ProductService {
         }
 
         try {
-            let res = await fetch(url, {
+            let res = await fetch(this.url, {
                 method: 'POST', // or 'PUT'
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,8 +1,6 @@
 import {ProductService} from './product.service.js'
 
 export class ProductComponent {
-    productService;
-
     constructor() {
         this.productService = new ProductService();
     }
@@ -28,6 +26,7 @@ export class ProductComponent {
             this.addProduct(productName, productPrice, productDesc);
         })
     }
+
     renderProducts(products) {
         const list = document.getElementById('list');
         list.innerHTML = "";
